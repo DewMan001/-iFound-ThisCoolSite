@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_Player2 = new System.Windows.Forms.Label();
+            this.lbl_Player1Wallet = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_Title
@@ -85,11 +86,22 @@
             this.lbl_Player2.TabIndex = 5;
             this.lbl_Player2.Text = "Player2";
             // 
+            // lbl_Player1Wallet
+            // 
+            this.lbl_Player1Wallet.AutoSize = true;
+            this.lbl_Player1Wallet.Font = new System.Drawing.Font("Gill Sans MT", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Player1Wallet.Location = new System.Drawing.Point(134, 75);
+            this.lbl_Player1Wallet.Name = "lbl_Player1Wallet";
+            this.lbl_Player1Wallet.Size = new System.Drawing.Size(80, 31);
+            this.lbl_Player1Wallet.TabIndex = 6;
+            this.lbl_Player1Wallet.Text = "Player1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(363, 458);
+            this.Controls.Add(this.lbl_Player1Wallet);
             this.Controls.Add(this.lbl_Player2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -109,6 +121,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbl_Player2;
+        private System.Windows.Forms.Label lbl_Player1Wallet;
     }
 }
 
