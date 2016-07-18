@@ -37,6 +37,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_Player3Wallet = new System.Windows.Forms.Label();
             this.lbl_Player4Wallet = new System.Windows.Forms.Label();
+            this.numUpDown_P1Bet = new System.Windows.Forms.NumericUpDown();
+            this.numUpDown_P2Bet = new System.Windows.Forms.NumericUpDown();
+            this.numUpDown_P3Bet = new System.Windows.Forms.NumericUpDown();
+            this.numUpDown_P4Bet = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P1Bet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P2Bet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P3Bet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P4Bet)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_Title
@@ -129,11 +137,43 @@
             this.lbl_Player4Wallet.TabIndex = 9;
             this.lbl_Player4Wallet.Text = "Player4Wallet";
             // 
+            // numUpDown_P1Bet
+            // 
+            this.numUpDown_P1Bet.Location = new System.Drawing.Point(310, 80);
+            this.numUpDown_P1Bet.Name = "numUpDown_P1Bet";
+            this.numUpDown_P1Bet.Size = new System.Drawing.Size(146, 26);
+            this.numUpDown_P1Bet.TabIndex = 10;
+            // 
+            // numUpDown_P2Bet
+            // 
+            this.numUpDown_P2Bet.Location = new System.Drawing.Point(310, 131);
+            this.numUpDown_P2Bet.Name = "numUpDown_P2Bet";
+            this.numUpDown_P2Bet.Size = new System.Drawing.Size(146, 26);
+            this.numUpDown_P2Bet.TabIndex = 11;
+            // 
+            // numUpDown_P3Bet
+            // 
+            this.numUpDown_P3Bet.Location = new System.Drawing.Point(310, 182);
+            this.numUpDown_P3Bet.Name = "numUpDown_P3Bet";
+            this.numUpDown_P3Bet.Size = new System.Drawing.Size(146, 26);
+            this.numUpDown_P3Bet.TabIndex = 12;
+            // 
+            // numUpDown_P4Bet
+            // 
+            this.numUpDown_P4Bet.Location = new System.Drawing.Point(310, 233);
+            this.numUpDown_P4Bet.Name = "numUpDown_P4Bet";
+            this.numUpDown_P4Bet.Size = new System.Drawing.Size(146, 26);
+            this.numUpDown_P4Bet.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 458);
+            this.Controls.Add(this.numUpDown_P4Bet);
+            this.Controls.Add(this.numUpDown_P3Bet);
+            this.Controls.Add(this.numUpDown_P2Bet);
+            this.Controls.Add(this.numUpDown_P1Bet);
             this.Controls.Add(this.lbl_Player4Wallet);
             this.Controls.Add(this.lbl_Player3Wallet);
             this.Controls.Add(this.label1);
@@ -145,6 +185,10 @@
             this.Controls.Add(this.lbl_Title);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P1Bet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P2Bet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P3Bet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P4Bet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,6 +205,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_Player3Wallet;
         private System.Windows.Forms.Label lbl_Player4Wallet;
+        private System.Windows.Forms.NumericUpDown numUpDown_P1Bet;
+        private System.Windows.Forms.NumericUpDown numUpDown_P2Bet;
+        private System.Windows.Forms.NumericUpDown numUpDown_P3Bet;
+        private System.Windows.Forms.NumericUpDown numUpDown_P4Bet;
     }
 }
 
