@@ -34,7 +34,7 @@
             this.lbl_Player3 = new System.Windows.Forms.Label();
             this.lbl_Player2 = new System.Windows.Forms.Label();
             this.lbl_Player1Wallet = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_Player2Wallet = new System.Windows.Forms.Label();
             this.lbl_Player3Wallet = new System.Windows.Forms.Label();
             this.lbl_Player4Wallet = new System.Windows.Forms.Label();
             this.numUpDown_P1Bet = new System.Windows.Forms.NumericUpDown();
@@ -107,15 +107,15 @@
             this.lbl_Player1Wallet.TabIndex = 6;
             this.lbl_Player1Wallet.Text = "Player1Wallet";
             // 
-            // label1
+            // lbl_Player2Wallet
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gill Sans MT", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(134, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 31);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Player2Wallet";
+            this.lbl_Player2Wallet.AutoSize = true;
+            this.lbl_Player2Wallet.Font = new System.Drawing.Font("Gill Sans MT", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Player2Wallet.Location = new System.Drawing.Point(134, 126);
+            this.lbl_Player2Wallet.Name = "lbl_Player2Wallet";
+            this.lbl_Player2Wallet.Size = new System.Drawing.Size(140, 31);
+            this.lbl_Player2Wallet.TabIndex = 7;
+            this.lbl_Player2Wallet.Text = "Player2Wallet";
             // 
             // lbl_Player3Wallet
             // 
@@ -176,7 +176,7 @@
             this.Controls.Add(this.numUpDown_P1Bet);
             this.Controls.Add(this.lbl_Player4Wallet);
             this.Controls.Add(this.lbl_Player3Wallet);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_Player2Wallet);
             this.Controls.Add(this.lbl_Player1Wallet);
             this.Controls.Add(this.lbl_Player2);
             this.Controls.Add(this.lbl_Player3);
@@ -185,6 +185,7 @@
             this.Controls.Add(this.lbl_Title);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P1Bet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P2Bet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P3Bet)).EndInit();
@@ -202,7 +203,7 @@
         private System.Windows.Forms.Label lbl_Player3;
         private System.Windows.Forms.Label lbl_Player2;
         private System.Windows.Forms.Label lbl_Player1Wallet;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_Player2Wallet;
         private System.Windows.Forms.Label lbl_Player3Wallet;
         private System.Windows.Forms.Label lbl_Player4Wallet;
         private System.Windows.Forms.NumericUpDown numUpDown_P1Bet;
