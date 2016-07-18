@@ -41,5 +41,17 @@ namespace _iFound_ThisCoolSite
             lbl_Player4.Text = Play4.getPlayerName();
             lbl_Player4Wallet.Text = Play4.getPlayerWallet().ToString();
         }
+
+        private void btn_GenBets_Click(object sender, EventArgs e)
+        {
+            //Randomly setting the chosen bet for player 2
+            numUpDown_P2Bet.Text = Play2.autoPickBet(Int32.Parse(lbl_Player2Wallet.Text)).ToString();
+
+            //Randomly setting the chosen bet for player 3
+            numUpDown_P3Bet.Text = Play3.autoPickBet(Int32.Parse(lbl_Player3Wallet.Text)).ToString();
+
+            //Randomly setting the chosen bet for player 4
+            numUpDown_P4Bet.Text = Play4.autoPickBet(Int32.Parse(lbl_Player4Wallet.Text)).ToString();
+        }
     }
 }

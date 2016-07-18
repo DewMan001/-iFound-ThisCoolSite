@@ -41,6 +41,8 @@
             this.numUpDown_P2Bet = new System.Windows.Forms.NumericUpDown();
             this.numUpDown_P3Bet = new System.Windows.Forms.NumericUpDown();
             this.numUpDown_P4Bet = new System.Windows.Forms.NumericUpDown();
+            this.btn_GenBets = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P1Bet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P2Bet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P3Bet)).BeginInit();
@@ -140,6 +142,11 @@
             // numUpDown_P1Bet
             // 
             this.numUpDown_P1Bet.Location = new System.Drawing.Point(310, 80);
+            this.numUpDown_P1Bet.Maximum = new decimal(new int[] {
+            4844,
+            0,
+            0,
+            0});
             this.numUpDown_P1Bet.Name = "numUpDown_P1Bet";
             this.numUpDown_P1Bet.Size = new System.Drawing.Size(146, 26);
             this.numUpDown_P1Bet.TabIndex = 10;
@@ -147,6 +154,11 @@
             // numUpDown_P2Bet
             // 
             this.numUpDown_P2Bet.Location = new System.Drawing.Point(310, 131);
+            this.numUpDown_P2Bet.Maximum = new decimal(new int[] {
+            5000000,
+            0,
+            0,
+            0});
             this.numUpDown_P2Bet.Name = "numUpDown_P2Bet";
             this.numUpDown_P2Bet.Size = new System.Drawing.Size(146, 26);
             this.numUpDown_P2Bet.TabIndex = 11;
@@ -154,6 +166,11 @@
             // numUpDown_P3Bet
             // 
             this.numUpDown_P3Bet.Location = new System.Drawing.Point(310, 182);
+            this.numUpDown_P3Bet.Maximum = new decimal(new int[] {
+            5000000,
+            0,
+            0,
+            0});
             this.numUpDown_P3Bet.Name = "numUpDown_P3Bet";
             this.numUpDown_P3Bet.Size = new System.Drawing.Size(146, 26);
             this.numUpDown_P3Bet.TabIndex = 12;
@@ -161,15 +178,41 @@
             // numUpDown_P4Bet
             // 
             this.numUpDown_P4Bet.Location = new System.Drawing.Point(310, 233);
+            this.numUpDown_P4Bet.Maximum = new decimal(new int[] {
+            5000000,
+            0,
+            0,
+            0});
             this.numUpDown_P4Bet.Name = "numUpDown_P4Bet";
             this.numUpDown_P4Bet.Size = new System.Drawing.Size(146, 26);
             this.numUpDown_P4Bet.TabIndex = 13;
+            // 
+            // btn_GenBets
+            // 
+            this.btn_GenBets.Location = new System.Drawing.Point(310, 288);
+            this.btn_GenBets.Name = "btn_GenBets";
+            this.btn_GenBets.Size = new System.Drawing.Size(146, 56);
+            this.btn_GenBets.TabIndex = 14;
+            this.btn_GenBets.Text = "Generate Bets";
+            this.btn_GenBets.UseVisualStyleBackColor = true;
+            this.btn_GenBets.Click += new System.EventHandler(this.btn_GenBets_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(19, 368);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(437, 55);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "GO!";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 458);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_GenBets);
             this.Controls.Add(this.numUpDown_P4Bet);
             this.Controls.Add(this.numUpDown_P3Bet);
             this.Controls.Add(this.numUpDown_P2Bet);
@@ -210,6 +253,8 @@
         private System.Windows.Forms.NumericUpDown numUpDown_P2Bet;
         private System.Windows.Forms.NumericUpDown numUpDown_P3Bet;
         private System.Windows.Forms.NumericUpDown numUpDown_P4Bet;
+        private System.Windows.Forms.Button btn_GenBets;
+        private System.Windows.Forms.Button button2;
     }
 }
 

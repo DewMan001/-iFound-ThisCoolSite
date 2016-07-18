@@ -36,5 +36,15 @@ namespace _iFound_ThisCoolSite
         {
             return PlayerWallet;
         }
+
+        public int autoPickBet(int upperLimit)
+        {
+            
+            Random betGenerator = new Random();
+
+            int pickedBet = betGenerator.Next(0, upperLimit);
+
+            return pickedBet;
+        }
     }
 }
