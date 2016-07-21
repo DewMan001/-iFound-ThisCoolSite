@@ -80,7 +80,17 @@ namespace _iFound_ThisCoolSite
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //variable for the combined total of all of the bets
+            int TotalPot;
 
+            //Determining the bets from the players
+            //first with Player 1
+            int P1Bet;
+            P1Bet = Int32.Parse(numUpDown_P1Bet.Text);
+
+            //and now Player 2
+            int P2Bet;
+            P2Bet = Int32.Parse(numUpDown_P2Bet.Text);
         }
     }
 }
