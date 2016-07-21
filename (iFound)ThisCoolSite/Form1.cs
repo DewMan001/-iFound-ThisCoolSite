@@ -62,10 +62,18 @@ namespace _iFound_ThisCoolSite
             if (Play2Bet == Play3Bet || Play2Bet == Play4Bet)
             {
                 Play2Bet = reRoll.Next(0, Int32.Parse(lbl_Player2Wallet.Text));
+                numUpDown_P2Bet.Text = Play2Bet.ToString();
             }
             
-            else if(Play3Bet == Play2Bet || Play3Bet == Play4Bet)
+            if(Play3Bet == Play2Bet || Play3Bet == Play4Bet)
             {
+                Play3Bet = reRoll.Next(0, Int32.Parse(lbl_Player3Wallet.Text));
+                numUpDown_P3Bet.Text = Play3Bet.ToString();
+            }
+
+            if(Play4Bet == Play2Bet || Play4Bet == Play3Bet)
+            {
+                Play4Bet = reRoll.Next(0, Int32.Parse(lbl_Player4Wallet.Text));
 
             }
         }

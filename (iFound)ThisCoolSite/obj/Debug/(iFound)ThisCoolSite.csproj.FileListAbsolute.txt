@@ -11,3 +11,9 @@ C:\Users\James\OneDrive\Certificate IV in Programming\C#\Personal projects\(iFou
 C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\bin\Debug\(iFound)ThisCoolSite.exe.config
 C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\obj\Debug\(iFound)ThisCoolSite.exe
 C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\obj\Debug\(iFound)ThisCoolSite.pdb
+C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\bin\Debug\(iFound)ThisCoolSite.exe
+C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\bin\Debug\(iFound)ThisCoolSite.pdb
+C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\obj\Debug\(iFound)ThisCoolSite.csprojResolveAssemblyReference.cache
+C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\obj\Debug\_iFound_ThisCoolSite.Form1.resources
+C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\obj\Debug\_iFound_ThisCoolSite.Properties.Resources.resources
+C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\obj\Debug\(iFound)ThisCoolSite.csproj.GenerateResource.Cache
