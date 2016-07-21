@@ -74,7 +74,7 @@ namespace _iFound_ThisCoolSite
             if(Play4Bet == Play2Bet || Play4Bet == Play3Bet)
             {
                 Play4Bet = reRoll.Next(0, Int32.Parse(lbl_Player4Wallet.Text));
-
+                numUpDown_P4Bet.Text = Play4Bet.ToString();
             }
         }
 
