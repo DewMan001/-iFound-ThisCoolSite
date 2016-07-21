@@ -44,14 +44,35 @@ namespace _iFound_ThisCoolSite
 
         private void btn_GenBets_Click(object sender, EventArgs e)
         {
+            //declaring the variables for the various bets
+            int Play2Bet;
+            int Play3Bet;
+            int Play4Bet;
+            Random reRoll = new Random();
+
             //Randomly setting the chosen bet for player 2
-            numUpDown_P2Bet.Text = Play2.autoPickBet(Int32.Parse(lbl_Player2Wallet.Text)).ToString();
+            Play2Bet = Play2.autoPickBet(Int32.Parse(lbl_Player2Wallet.Text));
 
             //Randomly setting the chosen bet for player 3
-            numUpDown_P3Bet.Text = Play3.autoPickBet(Int32.Parse(lbl_Player3Wallet.Text)).ToString();
+            Play3Bet = Play3.autoPickBet(Int32.Parse(lbl_Player3Wallet.Text));
 
             //Randomly setting the chosen bet for player 4
-            numUpDown_P4Bet.Text = Play4.autoPickBet(Int32.Parse(lbl_Player4Wallet.Text)).ToString();
+            Play4Bet = Play4.autoPickBet(Int32.Parse(lbl_Player4Wallet.Text));
+
+            if (Play2Bet == Play3Bet || Play2Bet == Play4Bet)
+            {
+                Play2Bet = reRoll.Next(0, Int32.Parse(lbl_Player2Wallet.Text));
+            }
+            
+            else if(Play3Bet == Play2Bet || Play3Bet == Play4Bet)
+            {
+
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
