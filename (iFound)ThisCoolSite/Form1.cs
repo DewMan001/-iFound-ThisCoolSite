@@ -99,6 +99,11 @@ namespace _iFound_ThisCoolSite
             //and finally player 4
             int P4Bet;
             P4Bet = Int32.Parse(numUpDown_P4Bet.Text);
+
+            //working out what their remaining cash is
+            //when their bets are taken from their wallets
+            //Player 1 has this much
+
         }
     }
 }

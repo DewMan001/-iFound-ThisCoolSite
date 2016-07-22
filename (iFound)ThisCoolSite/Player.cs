@@ -46,5 +46,21 @@ namespace _iFound_ThisCoolSite
 
             return pickedBet;
         }
+
+        public int seeRemainingCash(int playerBet, int playerWallet)
+        {
+            int cashLeft;
+            cashLeft = playerWallet - playerBet;
+
+            return cashLeft;
+        }
+
+        public int calculatePot(int P1Bet, int P2Bet, int P3Bet, int P4Bet)
+        {
+            int totalPot;
+            totalPot = P1Bet + P2Bet + P3Bet + P4Bet;
+
+            return totalPot;
+        }
     }
 }
