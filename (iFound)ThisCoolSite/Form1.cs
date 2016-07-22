@@ -100,10 +100,32 @@ namespace _iFound_ThisCoolSite
             int P4Bet;
             P4Bet = Int32.Parse(numUpDown_P4Bet.Text);
 
-            //working out what their remaining cash is
-            //when their bets are taken from their wallets
-            //Player 1 has this much
+            //pulling in their wallets
+            //Player1's wallet
+            int P1Wallet;
+            P1Wallet = Int32.Parse(lbl_Player1Wallet.Text);
 
+            //Player2's wallet
+            int P2Wallet;
+            P2Wallet = Int32.Parse(lbl_Player2Wallet.Text);
+
+            //Player3's wallet
+            int P3Wallet;
+            P3Wallet = Int32.Parse(lbl_Player3Wallet.Text);
+
+            //Player4's wallet
+            int P4Wallet;
+            P4Wallet = Int32.Parse(lbl_Player4Wallet.Text);
+
+            //Figuring out what they have left
+            CashPot calculator = new CashPot();
+            //Player 1's remainder (and label being setr)
+            int P1Remainder = calculator.seeRemainingCash(P1Bet, P1Wallet);
+            lbl_Player1Wallet.Text = P1Remainder.ToString();
+
+            //Player 2's remainder
+            int P2Remainder = calculator.seeRemainingCash(P2Bet, P2Wallet);
+            lbl_Player2Wallet.Text = P2
         }
     }
 }
