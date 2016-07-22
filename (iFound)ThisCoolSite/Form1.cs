@@ -93,6 +93,8 @@ namespace _iFound_ThisCoolSite
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //cashPot function for the things we need to do to Total Pot
+            CashPot functions = new CashPot();
             //variable for the combined total of all of the bets
             int TotalPot;
 
@@ -148,6 +150,23 @@ namespace _iFound_ThisCoolSite
             int P4Remainder = calculator.seeRemainingCash(P4Bet, P4Wallet);
             lbl_Player4Wallet.Text = P4Remainder.ToString();
 
+            //calculating total pot
+            TotalPot = functions.calculatePot(P1Bet, P2Bet, P3Bet, P4Bet);
+
+            //picking a winner
+            int winner = functions.pickWinner();
+
+            if (winner == 1)
+            {
+                P1Wallet = P1Remainder + TotalPot;
+                lbl_Player1Wallet.Text = P1Wallet.ToString();
+            }
+            else if (winner == 2)
+            {
+                P2Wallet = P2Remainder + TotalPot;
+                lbl_Player2Wallet.Text = P2Wallet.ToString();
+            }
+            else if (winner = 3)
         }
 
         private void numUpDown_P1Bet_ValueChanged(object sender, EventArgs e)
