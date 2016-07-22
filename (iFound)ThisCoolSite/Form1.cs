@@ -166,5 +166,56 @@ namespace _iFound_ThisCoolSite
 
             lbl_TotalPot.Text = PotTotal.ToString();
         }
+
+        private void numUpDown_P2Bet_ValueChanged(object sender, EventArgs e)
+        {
+            //setting up bet variables
+            int P1Bet = Int32.Parse(numUpDown_P1Bet.Text);
+            int P2Bet = Int32.Parse(numUpDown_P2Bet.Text);
+            int P3Bet = Int32.Parse(numUpDown_P3Bet.Text);
+            int P4Bet = Int32.Parse(numUpDown_P4Bet.Text);
+
+            //calculating total pot
+            CashPot calculator = new CashPot();
+
+            int PotTotal;
+            PotTotal = calculator.calculatePot(P1Bet, P2Bet, P3Bet, P4Bet);
+
+            lbl_TotalPot.Text = PotTotal.ToString();
+        }
+
+        private void numUpDown_P3Bet_ValueChanged(object sender, EventArgs e)
+        {
+            //setting up bet variables
+            int P1Bet = Int32.Parse(numUpDown_P1Bet.Text);
+            int P2Bet = Int32.Parse(numUpDown_P2Bet.Text);
+            int P3Bet = Int32.Parse(numUpDown_P3Bet.Text);
+            int P4Bet = Int32.Parse(numUpDown_P4Bet.Text);
+
+            //calculating total pot
+            CashPot calculator = new CashPot();
+
+            int PotTotal;
+            PotTotal = calculator.calculatePot(P1Bet, P2Bet, P3Bet, P4Bet);
+
+            lbl_TotalPot.Text = PotTotal.ToString();
+        }
+
+        private void numUpDown_P4Bet_ValueChanged(object sender, EventArgs e)
+        {
+            //setting up bet variables
+            int P1Bet = Int32.Parse(numUpDown_P1Bet.Text);
+            int P2Bet = Int32.Parse(numUpDown_P2Bet.Text);
+            int P3Bet = Int32.Parse(numUpDown_P3Bet.Text);
+            int P4Bet = Int32.Parse(numUpDown_P4Bet.Text);
+
+            //calculating total pot
+            CashPot calculator = new CashPot();
+
+            int PotTotal;
+            PotTotal = calculator.calculatePot(P1Bet, P2Bet, P3Bet, P4Bet);
+
+            lbl_TotalPot.Text = PotTotal.ToString();
+        }
     }
 }

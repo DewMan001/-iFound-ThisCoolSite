@@ -165,6 +165,7 @@
             this.numUpDown_P2Bet.Name = "numUpDown_P2Bet";
             this.numUpDown_P2Bet.Size = new System.Drawing.Size(146, 26);
             this.numUpDown_P2Bet.TabIndex = 11;
+            this.numUpDown_P2Bet.ValueChanged += new System.EventHandler(this.numUpDown_P2Bet_ValueChanged);
             // 
             // numUpDown_P3Bet
             // 
@@ -177,6 +178,7 @@
             this.numUpDown_P3Bet.Name = "numUpDown_P3Bet";
             this.numUpDown_P3Bet.Size = new System.Drawing.Size(146, 26);
             this.numUpDown_P3Bet.TabIndex = 12;
+            this.numUpDown_P3Bet.ValueChanged += new System.EventHandler(this.numUpDown_P3Bet_ValueChanged);
             // 
             // numUpDown_P4Bet
             // 
@@ -189,6 +191,7 @@
             this.numUpDown_P4Bet.Name = "numUpDown_P4Bet";
             this.numUpDown_P4Bet.Size = new System.Drawing.Size(146, 26);
             this.numUpDown_P4Bet.TabIndex = 13;
+            this.numUpDown_P4Bet.ValueChanged += new System.EventHandler(this.numUpDown_P4Bet_ValueChanged);
             // 
             // btn_GenBets
             // 

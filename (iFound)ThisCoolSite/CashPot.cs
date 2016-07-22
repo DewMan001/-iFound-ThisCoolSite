@@ -23,5 +23,10 @@ namespace _iFound_ThisCoolSite
 
             return totalPot;
         }
+
+        public int pickWinner()
+        {
+            int 
+        }
     }
 }
