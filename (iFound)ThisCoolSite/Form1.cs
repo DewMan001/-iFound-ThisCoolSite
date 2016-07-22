@@ -140,6 +140,15 @@ namespace _iFound_ThisCoolSite
         private void numUpDown_P1Bet_ValueChanged(object sender, EventArgs e)
         {
             //setting up bet variables
+            int P1Bet = Int32.Parse(numUpDown_P1Bet.ToString());
+            int P2Bet = Int32.Parse(numUpDown_P2Bet.ToString());
+            int P3Bet = Int32.Parse(numUpDown_P3Bet.ToString());
+            int P4Bet = Int32.Parse(numUpDown_P4Bet.ToString());
+
+            //calculating total pot
+            CashPot calculator = new CashPot();
+
+            
         }
     }
 }
