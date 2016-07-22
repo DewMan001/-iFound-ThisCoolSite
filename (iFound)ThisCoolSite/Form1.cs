@@ -42,13 +42,16 @@ namespace _iFound_ThisCoolSite
             lbl_Player4Wallet.Text = Play4.getPlayerWallet().ToString();
 
             //calculating pot total on launch
-            int P1Bet = Int32.Parse(numUpDown_P1Bet.ToString());
-            int P2Bet = Int32.Parse(numUpDown_P2Bet.ToString());
-            int P3Bet = Int32.Parse(numUpDown_P3Bet.ToString());
-            int P4Bet = Int32.Parse(numUpDown_P4Bet.ToString());
+            //setting up variables
+            int P1Bet = Int32.Parse(numUpDown_P1Bet.Text);
+            int P2Bet = Int32.Parse(numUpDown_P2Bet.Text);
+            int P3Bet = Int32.Parse(numUpDown_P3Bet.Text);
+            int P4Bet = Int32.Parse(numUpDown_P4Bet.Text);
             CashPot calculator = new CashPot();
-
+            //running calculation
             int potTotal = calculator.calculatePot(P1Bet, P2Bet, P3Bet, P4Bet);
+            //setting label to newly calculated value
+            lbl_TotalPot.Text = potTotal.ToString();
 
         }
 
@@ -150,10 +153,10 @@ namespace _iFound_ThisCoolSite
         private void numUpDown_P1Bet_ValueChanged(object sender, EventArgs e)
         {
             //setting up bet variables
-            int P1Bet = Int32.Parse(numUpDown_P1Bet.ToString());
-            int P2Bet = Int32.Parse(numUpDown_P2Bet.ToString());
-            int P3Bet = Int32.Parse(numUpDown_P3Bet.ToString());
-            int P4Bet = Int32.Parse(numUpDown_P4Bet.ToString());
+            int P1Bet = Int32.Parse(numUpDown_P1Bet.Text);
+            int P2Bet = Int32.Parse(numUpDown_P2Bet.Text);
+            int P3Bet = Int32.Parse(numUpDown_P3Bet.Text);
+            int P4Bet = Int32.Parse(numUpDown_P4Bet.Text);
 
             //calculating total pot
             CashPot calculator = new CashPot();
