@@ -91,6 +91,14 @@ namespace _iFound_ThisCoolSite
             //and now Player 2
             int P2Bet;
             P2Bet = Int32.Parse(numUpDown_P2Bet.Text);
+
+            //and now Player 3
+            int P3Bet;
+            P3Bet = Int32.Parse(numUpDown_P3Bet.Text);
+
+            //and finally player 4
+            int P4Bet;
+            P4Bet = Int32.Parse(numUpDown_P4Bet.Text);
         }
     }
 }
