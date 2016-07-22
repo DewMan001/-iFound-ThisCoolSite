@@ -40,6 +40,16 @@ namespace _iFound_ThisCoolSite
             //setting player 4's name and wallet amount
             lbl_Player4.Text = Play4.getPlayerName();
             lbl_Player4Wallet.Text = Play4.getPlayerWallet().ToString();
+
+            //calculating pot total on launch
+            int P1Bet = Int32.Parse(numUpDown_P1Bet.ToString());
+            int P2Bet = Int32.Parse(numUpDown_P2Bet.ToString());
+            int P3Bet = Int32.Parse(numUpDown_P3Bet.ToString());
+            int P4Bet = Int32.Parse(numUpDown_P4Bet.ToString());
+            CashPot calculator = new CashPot();
+
+            int potTotal = calculator.calculatePot(P1Bet, P2Bet, P3Bet, P4Bet);
+
         }
 
         private void btn_GenBets_Click(object sender, EventArgs e)
@@ -148,7 +158,10 @@ namespace _iFound_ThisCoolSite
             //calculating total pot
             CashPot calculator = new CashPot();
 
-            
+            int PotTotal;
+            PotTotal = calculator.calculatePot(P1Bet, P2Bet, P3Bet, P4Bet);
+
+            lbl_TotalPot.Text = PotTotal.ToString();
         }
     }
 }
