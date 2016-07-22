@@ -26,7 +26,16 @@ namespace _iFound_ThisCoolSite
 
         public int pickWinner()
         {
-            int 
+            //declaring a variable to be returned
+            int winNumber;
+            //declaring random generator
+            Random winPick = new Random();
+
+            //picking a winner
+            winNumber = winPick.Next(0, 4);
+
+            //returning the results
+            return winNumber;
         }
     }
 }
