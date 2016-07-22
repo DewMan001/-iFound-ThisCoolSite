@@ -119,13 +119,27 @@ namespace _iFound_ThisCoolSite
 
             //Figuring out what they have left
             CashPot calculator = new CashPot();
-            //Player 1's remainder (and label being setr)
+            //Player 1's remainder (and label being set)
             int P1Remainder = calculator.seeRemainingCash(P1Bet, P1Wallet);
             lbl_Player1Wallet.Text = P1Remainder.ToString();
 
-            //Player 2's remainder
+            //Player 2's remainder (and label being set)
             int P2Remainder = calculator.seeRemainingCash(P2Bet, P2Wallet);
-            lbl_Player2Wallet.Text = P2
+            lbl_Player2Wallet.Text = P2Remainder.ToString();
+
+            //Player 3's remainder (and label being set)
+            int P3Remainder = calculator.seeRemainingCash(P3Bet, P3Wallet);
+            lbl_Player3Wallet.Text = P3Remainder.ToString();
+
+            //Player 4's remainder (and label being set)
+            int P4Remainder = calculator.seeRemainingCash(P4Bet, P4Wallet);
+            lbl_Player4Wallet.Text = P4Remainder.ToString();
+
+        }
+
+        private void numUpDown_P1Bet_ValueChanged(object sender, EventArgs e)
+        {
+            //setting up bet variables
         }
     }
 }

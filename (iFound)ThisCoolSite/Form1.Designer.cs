@@ -43,6 +43,8 @@
             this.numUpDown_P4Bet = new System.Windows.Forms.NumericUpDown();
             this.btn_GenBets = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_TotalPot = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P1Bet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P2Bet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P3Bet)).BeginInit();
@@ -150,6 +152,7 @@
             this.numUpDown_P1Bet.Name = "numUpDown_P1Bet";
             this.numUpDown_P1Bet.Size = new System.Drawing.Size(146, 26);
             this.numUpDown_P1Bet.TabIndex = 10;
+            this.numUpDown_P1Bet.ValueChanged += new System.EventHandler(this.numUpDown_P1Bet_ValueChanged);
             // 
             // numUpDown_P2Bet
             // 
@@ -189,7 +192,7 @@
             // 
             // btn_GenBets
             // 
-            this.btn_GenBets.Location = new System.Drawing.Point(310, 288);
+            this.btn_GenBets.Location = new System.Drawing.Point(19, 289);
             this.btn_GenBets.Name = "btn_GenBets";
             this.btn_GenBets.Size = new System.Drawing.Size(146, 56);
             this.btn_GenBets.TabIndex = 14;
@@ -207,11 +210,33 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(180, 301);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 29);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Total Pot:";
+            // 
+            // lbl_TotalPot
+            // 
+            this.lbl_TotalPot.AutoSize = true;
+            this.lbl_TotalPot.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TotalPot.Location = new System.Drawing.Point(305, 301);
+            this.lbl_TotalPot.Name = "lbl_TotalPot";
+            this.lbl_TotalPot.Size = new System.Drawing.Size(144, 29);
+            this.lbl_TotalPot.TabIndex = 17;
+            this.lbl_TotalPot.Text = "<POT TOTAL>";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 458);
+            this.Controls.Add(this.lbl_TotalPot);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_GenBets);
             this.Controls.Add(this.numUpDown_P4Bet);
@@ -256,6 +281,8 @@
         private System.Windows.Forms.NumericUpDown numUpDown_P4Bet;
         private System.Windows.Forms.Button btn_GenBets;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_TotalPot;
     }
 }
 
