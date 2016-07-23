@@ -160,13 +160,24 @@ namespace _iFound_ThisCoolSite
             {
                 P1Wallet = P1Remainder + TotalPot;
                 lbl_Player1Wallet.Text = P1Wallet.ToString();
+
+                MessageBox.Show("Congratulations, Player 1! You win " + TotalPot.ToString())
             }
             else if (winner == 2)
             {
                 P2Wallet = P2Remainder + TotalPot;
                 lbl_Player2Wallet.Text = P2Wallet.ToString();
             }
-            else if (winner = 3)
+            else if (winner == 3)
+            {
+                P3Wallet = P3Remainder + TotalPot;
+                lbl_Player3Wallet.Text = P2Wallet.ToString();
+            }
+            else if (winner == 4)
+            {
+                P4Wallet = P4Remainder + TotalPot;
+                lbl_Player4Wallet.Text = P4Wallet.ToString();
+            }
         }
 
         private void numUpDown_P1Bet_ValueChanged(object sender, EventArgs e)
