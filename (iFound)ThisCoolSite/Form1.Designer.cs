@@ -275,6 +275,7 @@
             this.btn_Player4Reset.TabIndex = 21;
             this.btn_Player4Reset.Text = "Reset Bet";
             this.btn_Player4Reset.UseVisualStyleBackColor = true;
+            this.btn_Player4Reset.Click += new System.EventHandler(this.btn_Player4Reset_Click);
             // 
             // Form1
             // 

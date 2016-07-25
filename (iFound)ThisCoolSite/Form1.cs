@@ -292,12 +292,20 @@ namespace _iFound_ThisCoolSite
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //returning player 2's bet picker to 0
+            numUpDown_P2Bet.Text = "0";
         }
 
         private void btn_Player3Reset_Click(object sender, EventArgs e)
         {
-            //returning player 3's 
+            //returning player 3's bet picker to 0
+            numUpDown_P3Bet.Text = "0";
+        }
+
+        private void btn_Player4Reset_Click(object sender, EventArgs e)
+        {
+            //Returning player 4's bet picker to 0
+            numUpDown_P4Bet.Text = "0";
         }
     }
 }
