@@ -61,16 +61,35 @@ namespace _iFound_ThisCoolSite
             int Play2Bet;
             int Play3Bet;
             int Play4Bet;
+            //and the variables for the various maximum wallet limits
+            int Play2Max;
+            int Play3Max;
+            int Play4Max;
+            //and a random variable for generating bets
             Random reRoll = new Random();
 
-            //Randomly setting the chosen bet for player 2
-            Play2Bet = Play2.autoPickBet(Int32.Parse(lbl_Player2Wallet.Text));
+            //determining the maximum wallet size
+            //for player 2
+            Play2Max = Int32.Parse(lbl_Player2Wallet.Text.ToString());
+            //and for player 3
+            Play3Max = Int32.Parse(lbl_Player3Wallet.Text.ToString());
+            //and for player 4
+            Play4Max = Int32.Parse(lbl_Player4Wallet.Text.ToString());
 
-            //Randomly setting the chosen bet for player 3
-            Play3Bet = Play3.autoPickBet(Int32.Parse(lbl_Player3Wallet.Text));
+            //randomly selecting player two's bet
+            Play2Bet = reRoll.Next(0, Play2Max);
+            //setting player 2's bet picker
+            numUpDown_P2Bet.Text = Play2Bet.ToString();
 
-            //Randomly setting the chosen bet for player 4
-            Play4Bet = Play4.autoPickBet(Int32.Parse(lbl_Player4Wallet.Text));
+            //randomly selecting player three's bet
+            Play3Bet = reRoll.Next(0, Play3Max);
+            //setting player 3's bet picker
+            numUpDown_P3Bet.Text = Play3Bet.ToString();
+            
+            //randomly selecting player four's bet
+            Play4Bet = reRoll.Next(0, Play4Max);
+            //setting player 4's bet picker
+            numUpDown_P4Bet.Text = Play4Bet.ToString();
 
             if (Play2Bet == Play3Bet || Play2Bet == Play4Bet)
             {
@@ -89,6 +108,8 @@ namespace _iFound_ThisCoolSite
                 Play4Bet = reRoll.Next(0, Int32.Parse(lbl_Player4Wallet.Text));
                 numUpDown_P4Bet.Text = Play4Bet.ToString();
             }
+
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -161,23 +182,37 @@ namespace _iFound_ThisCoolSite
                 P1Wallet = P1Remainder + TotalPot;
                 lbl_Player1Wallet.Text = P1Wallet.ToString();
 
-                MessageBox.Show("Congratulations, Player 1! You win " + TotalPot.ToString())
+                MessageBox.Show("Congratulations, Player 1! You win " + TotalPot.ToString() + "!");
+                MessageBox.Show("Don't tell your parents!");
             }
             else if (winner == 2)
             {
                 P2Wallet = P2Remainder + TotalPot;
                 lbl_Player2Wallet.Text = P2Wallet.ToString();
+
+                MessageBox.Show("Congratulations, Player 2! You win " + TotalPot.ToString() + "!");
+                MessageBox.Show("Don't tell your parents!");
             }
             else if (winner == 3)
             {
                 P3Wallet = P3Remainder + TotalPot;
                 lbl_Player3Wallet.Text = P2Wallet.ToString();
+
+                MessageBox.Show("Congratulations, Player 3! You win " + TotalPot.ToString() + "!");
+                MessageBox.Show("Don't tell your parents!");
+                
             }
             else if (winner == 4)
             {
                 P4Wallet = P4Remainder + TotalPot;
                 lbl_Player4Wallet.Text = P4Wallet.ToString();
+
+                MessageBox.Show("Congratulations, Player 4! You win " + TotalPot.ToString() + "!");
+                MessageBox.Show("Don't tell your parents!");
+
             }
+
+            
         }
 
         private void numUpDown_P1Bet_ValueChanged(object sender, EventArgs e)
@@ -246,6 +281,23 @@ namespace _iFound_ThisCoolSite
             PotTotal = calculator.calculatePot(P1Bet, P2Bet, P3Bet, P4Bet);
 
             lbl_TotalPot.Text = PotTotal.ToString();
+        }
+
+        private void btn_ResetBets_Click(object sender, EventArgs e)
+        {
+            //returning player 1's bet picker to 0
+            numUpDown_P1Bet.Text = "0";
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Player3Reset_Click(object sender, EventArgs e)
+        {
+            //returning player 3's 
         }
     }
 }

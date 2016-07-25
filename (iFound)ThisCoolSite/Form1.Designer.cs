@@ -45,6 +45,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_TotalPot = new System.Windows.Forms.Label();
+            this.btn_Player1ResetBet = new System.Windows.Forms.Button();
+            this.btn_Player2Reset = new System.Windows.Forms.Button();
+            this.btn_Player3Reset = new System.Windows.Forms.Button();
+            this.btn_Player4Reset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P1Bet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P2Bet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P3Bet)).BeginInit();
@@ -197,7 +201,7 @@
             // 
             this.btn_GenBets.Location = new System.Drawing.Point(19, 289);
             this.btn_GenBets.Name = "btn_GenBets";
-            this.btn_GenBets.Size = new System.Drawing.Size(146, 56);
+            this.btn_GenBets.Size = new System.Drawing.Size(174, 56);
             this.btn_GenBets.TabIndex = 14;
             this.btn_GenBets.Text = "Generate Bets";
             this.btn_GenBets.UseVisualStyleBackColor = true;
@@ -207,7 +211,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(19, 368);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(437, 55);
+            this.button2.Size = new System.Drawing.Size(558, 55);
             this.button2.TabIndex = 15;
             this.button2.Text = "GO!";
             this.button2.UseVisualStyleBackColor = true;
@@ -217,7 +221,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(180, 301);
+            this.label1.Location = new System.Drawing.Point(199, 301);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 29);
             this.label1.TabIndex = 16;
@@ -227,17 +231,60 @@
             // 
             this.lbl_TotalPot.AutoSize = true;
             this.lbl_TotalPot.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TotalPot.Location = new System.Drawing.Point(305, 301);
+            this.lbl_TotalPot.Location = new System.Drawing.Point(312, 301);
             this.lbl_TotalPot.Name = "lbl_TotalPot";
             this.lbl_TotalPot.Size = new System.Drawing.Size(144, 29);
             this.lbl_TotalPot.TabIndex = 17;
             this.lbl_TotalPot.Text = "<POT TOTAL>";
             // 
+            // btn_Player1ResetBet
+            // 
+            this.btn_Player1ResetBet.Location = new System.Drawing.Point(469, 71);
+            this.btn_Player1ResetBet.Name = "btn_Player1ResetBet";
+            this.btn_Player1ResetBet.Size = new System.Drawing.Size(108, 42);
+            this.btn_Player1ResetBet.TabIndex = 18;
+            this.btn_Player1ResetBet.Text = "Reset Bet";
+            this.btn_Player1ResetBet.UseVisualStyleBackColor = true;
+            this.btn_Player1ResetBet.Click += new System.EventHandler(this.btn_ResetBets_Click);
+            // 
+            // btn_Player2Reset
+            // 
+            this.btn_Player2Reset.Location = new System.Drawing.Point(469, 122);
+            this.btn_Player2Reset.Name = "btn_Player2Reset";
+            this.btn_Player2Reset.Size = new System.Drawing.Size(108, 42);
+            this.btn_Player2Reset.TabIndex = 19;
+            this.btn_Player2Reset.Text = "Reset Bet";
+            this.btn_Player2Reset.UseVisualStyleBackColor = true;
+            this.btn_Player2Reset.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_Player3Reset
+            // 
+            this.btn_Player3Reset.Location = new System.Drawing.Point(469, 173);
+            this.btn_Player3Reset.Name = "btn_Player3Reset";
+            this.btn_Player3Reset.Size = new System.Drawing.Size(108, 42);
+            this.btn_Player3Reset.TabIndex = 20;
+            this.btn_Player3Reset.Text = "Reset Bet";
+            this.btn_Player3Reset.UseVisualStyleBackColor = true;
+            this.btn_Player3Reset.Click += new System.EventHandler(this.btn_Player3Reset_Click);
+            // 
+            // btn_Player4Reset
+            // 
+            this.btn_Player4Reset.Location = new System.Drawing.Point(469, 224);
+            this.btn_Player4Reset.Name = "btn_Player4Reset";
+            this.btn_Player4Reset.Size = new System.Drawing.Size(108, 42);
+            this.btn_Player4Reset.TabIndex = 21;
+            this.btn_Player4Reset.Text = "Reset Bet";
+            this.btn_Player4Reset.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 458);
+            this.ClientSize = new System.Drawing.Size(589, 458);
+            this.Controls.Add(this.btn_Player4Reset);
+            this.Controls.Add(this.btn_Player3Reset);
+            this.Controls.Add(this.btn_Player2Reset);
+            this.Controls.Add(this.btn_Player1ResetBet);
             this.Controls.Add(this.lbl_TotalPot);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -286,6 +333,10 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_TotalPot;
+        private System.Windows.Forms.Button btn_Player1ResetBet;
+        private System.Windows.Forms.Button btn_Player2Reset;
+        private System.Windows.Forms.Button btn_Player3Reset;
+        private System.Windows.Forms.Button btn_Player4Reset;
     }
 }
 
