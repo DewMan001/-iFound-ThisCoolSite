@@ -10,9 +10,9 @@ namespace _iFound_ThisCoolSite
     {
         string PlayerName;
         int PlayerWallet;
-        Player()
+        public Player()
         {
-            PlayerName = "Betty Betterson";
+            PlayerName = "Betty B";
             PlayerWallet = 4844;
         }
 
@@ -22,7 +22,7 @@ namespace _iFound_ThisCoolSite
 
         }
 
-        private string getPlayerName()
+        public string getPlayerName()
         {
             return PlayerName;
         }
@@ -32,9 +32,20 @@ namespace _iFound_ThisCoolSite
             PlayerWallet = Cash;
         }
 
-        private int getPlayerWallet()
+        public int getPlayerWallet()
         {
             return PlayerWallet;
         }
+
+        public int autoPickBet(int upperLimit)
+        {
+            
+            Random betGenerator = new Random();
+
+            int pickedBet = betGenerator.Next(0, upperLimit);
+
+            return pickedBet;
+        }
+
     }
 }
