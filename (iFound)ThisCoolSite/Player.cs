@@ -16,7 +16,7 @@ namespace _iFound_ThisCoolSite
             PlayerWallet = 4844;
         }
 
-        private void setPlayerName(string Name)
+        public void setPlayerName(string Name)
         {
             PlayerName = Name;
 
@@ -27,7 +27,7 @@ namespace _iFound_ThisCoolSite
             return PlayerName;
         }
 
-        private void setPlayerWallet(int Cash)
+        public void setPlayerWallet(int Cash)
         {
             PlayerWallet = Cash;
         }

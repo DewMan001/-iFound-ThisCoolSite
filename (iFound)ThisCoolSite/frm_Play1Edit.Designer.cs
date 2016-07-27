@@ -28,29 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_Play1Save = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.btn_P1Save = new System.Windows.Forms.Button();
+            this.numUpDown_P1EditWallet = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_P1EditName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P1EditWallet)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_Play1Save
+            // btn_P1Save
             // 
-            this.btn_Play1Save.Location = new System.Drawing.Point(459, 195);
-            this.btn_Play1Save.Name = "btn_Play1Save";
-            this.btn_Play1Save.Size = new System.Drawing.Size(115, 47);
-            this.btn_Play1Save.TabIndex = 0;
-            this.btn_Play1Save.Text = "Save";
-            this.btn_Play1Save.UseVisualStyleBackColor = true;
+            this.btn_P1Save.Location = new System.Drawing.Point(459, 195);
+            this.btn_P1Save.Name = "btn_P1Save";
+            this.btn_P1Save.Size = new System.Drawing.Size(115, 47);
+            this.btn_P1Save.TabIndex = 0;
+            this.btn_P1Save.Text = "Save";
+            this.btn_P1Save.UseVisualStyleBackColor = true;
+            this.btn_P1Save.Click += new System.EventHandler(this.btn_P1Save_Click);
             // 
-            // numericUpDown1
+            // numUpDown_P1EditWallet
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(12, 143);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(562, 26);
-            this.numericUpDown1.TabIndex = 1;
+            this.numUpDown_P1EditWallet.Location = new System.Drawing.Point(12, 143);
+            this.numUpDown_P1EditWallet.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numUpDown_P1EditWallet.Name = "numUpDown_P1EditWallet";
+            this.numUpDown_P1EditWallet.Size = new System.Drawing.Size(562, 26);
+            this.numUpDown_P1EditWallet.TabIndex = 1;
             // 
             // label1
             // 
@@ -61,12 +67,12 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Wallet";
             // 
-            // textBox1
+            // txt_P1EditName
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(562, 26);
-            this.textBox1.TabIndex = 3;
+            this.txt_P1EditName.Location = new System.Drawing.Point(12, 75);
+            this.txt_P1EditName.Name = "txt_P1EditName";
+            this.txt_P1EditName.Size = new System.Drawing.Size(562, 26);
+            this.txt_P1EditName.TabIndex = 3;
             // 
             // label2
             // 
@@ -83,13 +89,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 254);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_P1EditName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.btn_Play1Save);
+            this.Controls.Add(this.numUpDown_P1EditWallet);
+            this.Controls.Add(this.btn_P1Save);
             this.Name = "frm_Play1Edit";
             this.Text = "frm_Play1Edit";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_P1EditWallet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,10 +103,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_Play1Save;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button btn_P1Save;
+        private System.Windows.Forms.NumericUpDown numUpDown_P1EditWallet;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_P1EditName;
         private System.Windows.Forms.Label label2;
     }
 }
