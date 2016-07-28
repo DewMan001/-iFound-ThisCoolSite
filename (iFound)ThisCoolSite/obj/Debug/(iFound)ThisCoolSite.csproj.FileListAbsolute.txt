@@ -17,3 +17,4 @@ C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal pro
 C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\obj\Debug\_iFound_ThisCoolSite.Form1.resources
 C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\obj\Debug\_iFound_ThisCoolSite.Properties.Resources.resources
 C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\obj\Debug\(iFound)ThisCoolSite.csproj.GenerateResource.Cache
+C:\Users\James\OneDrive\Certificate IV in Programming\Semester 1\C#\Personal projects\(iFound)ThisCoolSite\-iFound-ThisCoolSite\(iFound)ThisCoolSite\obj\Debug\_iFound_ThisCoolSite.frm_Play1Edit.resources

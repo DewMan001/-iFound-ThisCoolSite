@@ -42,6 +42,14 @@ namespace _iFound_ThisCoolSite
             //setting that variable as the wallet amount
             //for player 1
             P1Edit.setPlayerWallet(P1EditedWallet);
+
+            //clearing out the textbox
+            //and the numeric up down box
+            txt_P1EditName.Text = String.Empty;
+            numUpDown_P1EditWallet.Text = "0";
+
+            //closing the form
+            this.Close();
         }
     }
 }

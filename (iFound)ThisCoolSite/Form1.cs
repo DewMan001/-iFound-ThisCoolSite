@@ -307,5 +307,12 @@ namespace _iFound_ThisCoolSite
             //Returning player 4's bet picker to 0
             numUpDown_P4Bet.Text = "0";
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //opening up the edit form
+            frm_Play1Edit open_P1Edit = new frm_Play1Edit();
+            open_P1Edit.Show();
+        }
     }
 }
